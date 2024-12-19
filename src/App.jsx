@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Beranda from "./Pages/Beranda";
 import Tentang from "./Pages/Tentang";
 import Layanan from "./Pages/Layanan";
@@ -29,7 +29,7 @@ import EdukasiBawang from "./Pages/EdukasiBawang";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Beranda/>} />
         <Route path="/daftar" element={<Daftar/>} />
@@ -56,7 +56,7 @@ function App() {
         <Route path="/upcycling-wadah" element={<LimbahUpcyclingWadah/>} />
         <Route path="/chatbot-mr-grow" element={<Chatbot/>} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
