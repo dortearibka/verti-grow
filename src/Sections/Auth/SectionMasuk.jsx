@@ -143,7 +143,7 @@ export default function SectionMasuk() {
 
           <p className="text-center text-gray-600 mt-6">
             Tidak Punya Akun?{" "}
-            <a href="/Daftar" className="text-orange-600 font-medium">
+            <a href="/daftar" className="text-orange-600 font-medium">
               Daftar
             </a>
           </p>

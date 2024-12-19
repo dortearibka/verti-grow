@@ -161,7 +161,7 @@ export default function SectionDaftar() {
 
           <p className="text-center text-gray-600 mt-6">
             Sudah Punya Akun?{" "}
-            <a href="/Masuk" className="text-orange-600 font-medium">
+            <a href="/masuk" className="text-orange-600 font-medium">
               Masuk
             </a>
           </p>

@@ -27,19 +27,17 @@ import EdukasiBawang from "./Pages/EdukasiBawang";
 
 
 
-
-
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Beranda />} />
-        <Route path="/daftar" element={<Daftar />} />
-        <Route path="/masuk" element={<Masuk />} />
+        <Route path="/" element={<Beranda/>} />
+        <Route path="/daftar" element={<Daftar/>} />
+        <Route path="/masuk" element={<Masuk/>} />
         <Route path="/tentang-kami" element={<Tentang/>} />
-        <Route path="/layanan-kami" element={<Layanan />} />
-        <Route path="/verti-guide" element={<Edukasi />} />
-        <Route path="/pakcoy" element={<EdukasiPakcoy />} />
+        <Route path="/layanan-kami" element={<Layanan/>} />
+        <Route path="/verti-guide" element={<Edukasi/>} />
+        <Route path="/pakcoy" element={<EdukasiPakcoy/>} />
         <Route path="/bayam" element={<EdukasiBayam/>} />
         <Route path="/kangkung" element={<EdukasiKangkung/>} />
         <Route path="/kucai" element={<EdukasiKucai/>} />
@@ -47,7 +45,7 @@ function App() {
         <Route path="/seledri" element={<EdukasiSeledri/>} />
         <Route path="/caisim" element={<EdukasiCaisim/>} />
         <Route path="/bawang" element={<EdukasiBawang/>} />
-        <Route path="/eco-limbah" element={<Limbah />} />
+        <Route path="/eco-limbah" element={<Limbah/>} />
         <Route path="/biochar-organik" element={<LimbahBiocharOrganik/>} />
         <Route path="/fermentasi-bokashi" element={<LimbahFermentasiBokashi/>} />
         <Route path="/kompos-daun" element={<LimbahKomposDaun/>} />
@@ -56,7 +54,7 @@ function App() {
         <Route path="/pupuk-cair" element={<LimbahPupukCair/>} />
         <Route path="/pupuk-hijau" element={<LimbahPupukHijau/>} />
         <Route path="/upcycling-wadah" element={<LimbahUpcyclingWadah/>} />
-        <Route path="/chatbot-mr-grow" element={<Chatbot />} />
+        <Route path="/chatbot-mr-grow" element={<Chatbot/>} />
       </Routes>
     </BrowserRouter>
   );
