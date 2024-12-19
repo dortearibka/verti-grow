@@ -1,5 +1,5 @@
 import React from 'react'
-import BiocharPadi from '../../../assets/EcoLimbah/AlatBahan/Biochar Padi.jpg'
+import BiocharPadi from '../../../assets/EcoLimbah/AlatBahan/Biochar padi.jpg'
 import GulaPasir from '../../../assets/EcoLimbah/AlatBahan/Gula.jpg'
 import EM4 from '../../../assets/EcoLimbah/AlatBahan/Larutan EM4.jpg'
 import SampahDapur from '../../../assets/EcoLimbah/AlatBahan/Sampah Dapur.jpg'
