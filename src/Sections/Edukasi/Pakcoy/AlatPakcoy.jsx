@@ -1,55 +1,103 @@
 import React, { useState } from 'react';
+import MediaTanam from '../../../assets/VertiGuide/Langkah/Campuran Media.jpg'
+import PipaPVC from '../../../assets/VertiGuide/Langkah/Media PVC.jpg'
+import Lubang from '../../../assets/VertiGuide/Langkah/Pembuatan Lubang.jpg'
+import TanamBenih from '../../../assets/VertiGuide/Langkah/Penanaman Benih.jpg'
+import SiramBenih from '../../../assets/VertiGuide/Langkah/Penyiraman Benih.jpg'
+import PupukTanaman from '../../../assets/VertiGuide/Langkah/Pemupukan.jpg'
+import Bayam from '../../../assets/VertiGuide/Langkah/Panen Bayam.jpg'
+import PanenBayam from '../../../assets/VertiGuide/Langkah/Pemanenan Bayam.jpg'
+import Semai from '../../../assets/VertiGuide/Langkah/Penyemaian.jpg'
+import TanamVertikal from '../../../assets/VertiGuide/Langkah/Penanaman Vertikal.jpg'
+import PupukCair from '../../../assets/VertiGuide/Langkah/Penyiraman Pupuk.jpg'
+import PanenCaisim from '../../../assets/VertiGuide/Langkah/Pemanenan Caisim.jpg'
+import PilihTanaman from '../../../assets/VertiGuide/Langkah/Bawang.jpg'
+import PotongTanaman from '../../../assets/VertiGuide/Langkah/Pemotongan Bawang.jpg'
+import TanamBawang from '../../../assets/VertiGuide/Langkah/Tanam Bawang.jpeg'
+import SiramBawang from '../../../assets/VertiGuide/Langkah/Penyiraman Bawang.jpg'
+import PanenBawang from '../../../assets/VertiGuide/Langkah/Pemanenan Bawang.jpg'
+import PupukTanah from '../../../assets/VertiGuide/Langkah/Pemupukan Tanah.png'
+import SiramKangkung from '../../../assets/VertiGuide/Langkah/Penyiraman bayam.jpg'
+import JarangKangkung from '../../../assets/VertiGuide/Langkah/Penjarangan.jpg'
+import SiangKangkung from '../../../assets/VertiGuide/Langkah/Penyiangan.jpg'
+import PanenKangkung from '../../../assets/VertiGuide/Langkah/Kangkung.jpg'
+import PanenUlangKangkung from '../../../assets/VertiGuide/Langkah/Pemanenan Kembali Kangkung.jpg'
+import SiramKucai from '../../../assets/VertiGuide/Langkah/Penyiraman Kucai.jpg'
+import JarangKucai from '../../../assets/VertiGuide/Langkah/Penjarangan Kucai.jpg'
+import PupukNPK from '../../../assets/VertiGuide/Langkah/Pemupukan NPK.jpg'
+import PanenKucai from '../../../assets/VertiGuide/Langkah/Kucai.jpg'
+import PindahKucai from '../../../assets/VertiGuide/Langkah/Kucai Mini.jpg'
+import SiramBayam from '../../../assets/VertiGuide/Langkah/Penyiraman bayam.jpg'
+import Siang from '../../../assets/VertiGuide/Langkah/Penyiangan.jpg'
+import PanenPakcoy from '../../../assets/VertiGuide/Langkah/Pakcoy.jpeg'
 
-export default function AlatPakcoy() {
-  // 
-  const data = [
-    {
-      title: 'Media Tanam',
-      description: 'Gunakan campuran tanah, kompos, dan sekam bakar atau cocopeat. Media ini harus memiliki drainase yang baik.',
-      img: 'https://assets-a1.kompasiana.com/items/album/2017/10/11/fa4eb39b-fcfe-47a2-b60f-d778a1297192-59dda141bde5757bb35671f5.jpeg',
-    },
-    {
-      title: 'Wadah Vertikultur',
-      description: 'Gunakan pipa PVC, paralon, atau rak vertikal yang berlubang untuk tempat menanam pakcoy.',
-      img: 'https://picsum.photos/500/300',
-    },
-    {
-      title: 'Bibit Pakcoy',
-      description: 'Pilih bibit pakcoy yang unggul, sehat, dan bebas dari penyakit.',
-      img: 'https://bibitbunga.com/wp-content/uploads/2016/08/menyemai-biji-pakcoy.jpg',
-    },
-    {
-      title: 'Pupuk dan Air',
-      description: 'Gunakan pupuk organik atau pupuk cair sesuai kebutuhan tanaman. Pastikan penyiraman dilakukan dengan efisien, misalnya menggunakan selang atau sprayer.',
-      img: 'https://picsum.photos/500/300',
-    },
-  ];
+const data = [
+  {
+    title: 'Semai Bibit',
+    description: 'Semai bibit yang telah disiapkan di media tanam dari campuran tanah dan kompos.',
+    img: Semai,
+  },
+  {
+    title: 'Penyiraman Bibit',
+    description: 'Lakukan penyiraman secara rutin agar benih tumbuh menjadi bibit atau tanaman muda yang sehat',
+    img: SiramBenih,
+  },
+  {
+    title: 'Pindahkan Tanaman',
+    description: 'Setelah bibit memiliki dua hingga tiga helai daun, baru dipindahkan ke media tanam vertikultur.',
+    img: PindahKucai,
+  },
+  {
+    title: 'Siapkan Media Vertikultur',
+    description: 'Masukkan campuran media tanam yang sebelumnya dibuat ke lubang pada pipa PVC.',
+    img: PipaPVC,
+  },
+  {
+    title: 'Siram Tanaman',
+    description: 'Lakukan penyiraman sebanyak dua kali sehari atau saat media tanam terlihat kering.',
+    img: SiramBayam,
+  },
+  {
+    title: 'Penyiangan',
+    description: 'Lakukan penyiangan tanaman dengan cara membersihkan gulma.',
+    img: Siang,
+  },
+  {
+    title: 'Pemupukan',
+    description: 'Lakukan juga pemupukan menggunakan pupuk kompos atau bokashi setelah tanaman mencapai umur 7-10 hari setelah tanam.',
+    img: PupukNPK,
+  },
+  {
+    title: 'Kucai Siap Dianen',
+    description: 'Tanaman kucai mulai bisa dipanen setelah 25-30 hari setelah tanam.',
+    img: PanenPakcoy,
+  },
+];
 
-  const itemsPerPage = 1; // Jumlah item per halaman
+const AlatPakcoy = () => {
+  const itemsPerPage = 1;
   const [currentPage, setCurrentPage] = useState(1);
 
-  // total pages untuk pagination
   const totalPages = Math.ceil(data.length / itemsPerPage);
   const paginatedData = data.slice(
     (currentPage - 1) * itemsPerPage,
     currentPage * itemsPerPage
   );
 
-  // handle previous untuk pagination
   const handlePrevious = () => {
     if (currentPage > 1) setCurrentPage(currentPage - 1);
   };
 
-  // handle next untuk pagination
   const handleNext = () => {
     if (currentPage < totalPages) setCurrentPage(currentPage + 1);
   };
 
   return (
     <section className="container flex flex-col items-center py-16">
-      <h3 className="text-3xl font-semibold mb-12">Alat dan Bahan</h3>
+      <h3 className="text-3xl font-semibold mb-12">
+        Langkah Penanaman Pakcoy
+      </h3>
 
-      {/* Konten */}
       <div className="w-full flex flex-col items-center gap-8">
         {paginatedData.map((item, index) => (
           <div
@@ -61,7 +109,7 @@ export default function AlatPakcoy() {
               alt={item.title}
               className="w-full h-[400px] object-cover"
             />
-            <div className="absolute bottom-0 left-0 right-0 h-full flex flex-col justify-end text-center bg-black bg-opacity-60 p-8">
+            <div className="absolute bottom-0 left-0 right-0 flex flex-col justify-end text-center bg-black bg-opacity-50 p-8">
               <h3 className="text-2xl font-bold mb-4">{item.title}</h3>
               <p className="text-lg">{item.description}</p>
             </div>
@@ -69,7 +117,6 @@ export default function AlatPakcoy() {
         ))}
       </div>
 
-      {/* Pagination */}
       <div className="flex gap-4 mt-10">
         <button
           onClick={handlePrevious}
@@ -95,4 +142,6 @@ export default function AlatPakcoy() {
       </div>
     </section>
   );
-}
+};
+
+export default AlatPakcoy;

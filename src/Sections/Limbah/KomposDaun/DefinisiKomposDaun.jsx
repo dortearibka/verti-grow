@@ -10,7 +10,7 @@ export default function DefinisiBiocharOrganik() {
     const fetchData = async () => {
       try {
         // Mengambil data limbah (title, konten, dan image) dari API
-        const response = await axios.get("http://localhost:4000/limbah/5");
+        const response = await axios.get("http://localhost:4000/limbah/6");
 
         if (response.data) {
           setTitle(response.data.title); // Menyimpan title
@@ -18,7 +18,7 @@ export default function DefinisiBiocharOrganik() {
 
           // Mengambil gambar dari API limbah
           const imageResponse = await axios.get(
-            "http://localhost:4000/limbah/5/image",
+            "http://localhost:4000/limbah/6/image",
             {
               responseType: "blob",
             }
@@ -58,7 +58,7 @@ export default function DefinisiBiocharOrganik() {
             <h1 className="text-5xl font-extrabold leading-tight tracking-wide">
               {title || "Memuat title..."} {/* Menampilkan title */}
             </h1>
-            <p className="text-lg leading-relaxed">
+            <p className="text-lg leading-relaxed text-justify">
               {content || "Memuat konten..."} {/* Menampilkan konten */}
             </p>
           </div>

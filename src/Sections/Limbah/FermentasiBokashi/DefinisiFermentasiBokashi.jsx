@@ -58,7 +58,7 @@ export default function DefinisiBiocharOrganik() {
             <h1 className="text-5xl font-extrabold leading-tight tracking-wide">
               {title || "Memuat title..."} {/* Menampilkan title */}
             </h1>
-            <p className="text-lg leading-relaxed">
+            <p className="text-lg leading-relaxed text-justify">
               {content || "Memuat konten..."} {/* Menampilkan konten */}
             </p>
           </div>

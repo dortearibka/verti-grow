@@ -1,16 +1,16 @@
-import React from 'react'
+import React from "react";
 
 export default function VideoPupukHijau() {
   return (
     <section className="container flex flex-col justify-center items-center gap-8 py-16 px-4">
       {/* Video Section */}
       <div className="relative w-full max-w-4xl shadow-lg rounded-xl overflow-hidden">
-        <video
-          controls
-          className="w-full rounded-xl hover:scale-105 transition-transform duration-300"
-        >
-          <source src="https://www.petanikode.com/img/html-video/cat-herd.webm" />
-        </video>
+      <iframe 
+      width="900" 
+      height="500" 
+      src="https://www.youtube.com/embed/qG6mtFzVDNk?si=VTZSiTNAR6lbnW0v" title="YouTube video player" frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+      allowfullscreen></iframe>
         <div className="absolute top-2 left-2 bg-green-600 text-white text-sm px-3 py-1 rounded-full shadow">
           Tutorial
         </div>
@@ -22,9 +22,9 @@ export default function VideoPupukHijau() {
           Video Tutorial Pembuatan Pupuk Hijau
         </h3>
         <p className="mt-4 text-gray-600 text-lg">
-          Dengan langkah-langkah ini, Anda dapat mengolah sampah daun hijau menjadi pupuk hijau.
+          Dengan langkah-langkah ini, Anda dapat mengolah sampah daun hijau menjadi pupuk.
         </p>
       </div>
     </section>
-  )
+  );
 }

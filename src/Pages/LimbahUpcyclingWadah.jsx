@@ -11,8 +11,8 @@ export default function LimbahUpcyclingWadah() {
     <>
         <NavbarUser/>
         <DefinisiUpcyclingWadah/>
-        <AlatUpcyclingWadah/>
         <LangkahUpcyclingWadah/>
+        <AlatUpcyclingWadah/>
         <VideoUpcyclingWadah/>
         <Footer/>
     </>
